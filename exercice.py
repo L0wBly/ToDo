@@ -12,7 +12,25 @@ def creer_todo():
     afaire.append(input())
 
 def modifier_statut_todo():
-    pass
+    print("lequel voulez vous modifiez ?")
+    print("A faire ", afaire)
+    print("Fait ", fait)
+    choice = input()
+    if choice in afaire :
+        fait.append(choice)
+        afaire.remove(choice)
+        print("A faire ", afaire)
+        print("Fait ", fait)
+        print("A fair ", afair)
+    elif choice in fait :
+        print("Error tu ne peux pas faire ça !")
+        afair.append(choice)
+        fait.remove(choice)
+        print("A faire ", afaire)
+        print("Fait ", fait)
+        print("A fair ", afair)
+    else :
+        print("Ce todo n'existe pas !")
     
 def supprimer_todo():
     pass
