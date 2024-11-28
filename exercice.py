@@ -1,9 +1,11 @@
+afaire = []
 
 def lister_todos():
     pass
 
 def creer_todo():
-    pass
+    print('Nom de la tache')
+    afaire.append(input())
 
 def modifier_statut_todo():
     pass
