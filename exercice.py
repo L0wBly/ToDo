@@ -1,7 +1,11 @@
 afaire = []
+afair = []
+fait = []
 
 def lister_todos():
-    pass
+    print("A faire ", afaire)
+    print("Fait ", fait)
+    print("A fair ", afair)
 
 def creer_todo():
     print('Nom de la tache')
