@@ -1,4 +1,3 @@
-
 def lister_todos():
     pass
 
@@ -8,7 +7,7 @@ def creer_todo():
 def modifier_statut_todo():
     pass
     
-def supprimer_todo():
+def supprimer_todo(:
     pass
 
 choix = ''
