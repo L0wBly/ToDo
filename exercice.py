@@ -33,8 +33,61 @@ def modifier_statut_todo():
         print("Ce todo n'existe pas !")
     
 def supprimer_todo():
-    pass
-
+    print("Choisissez une liste pour supprimer un todo")
+    print("1 - A faire ", afaire)
+    print("2 - Fait ", fait)
+    print("3 - A Fair ", afair)
+    choice = input()
+    match choice:
+        case "1":
+            print("lequel voulez vous supprimez ?")
+            print(afaire)
+            choice = input()
+            print("Êtes vous sûr ?")
+            print("1 - Oui")
+            print("2 - Non")
+            resp = input()
+            match resp:
+                case '1':
+                    afaire.remove(choice)
+                case '2':
+                    pass
+            print("A faire ", afaire)
+            print("Fait ", fait)
+            print("A fair ", afair)
+        case '2':
+            print("lequel voulez vous supprimez ?")
+            print(fait)
+            choice = input()
+            print("Êtes vous sûr ?")
+            print("1 - Oui")
+            print("2 - Non")
+            resp = input()
+            match resp:
+                case '1':
+                    fait.remove(choice)
+                case '2':
+                    pass
+            print("A faire ", afaire)
+            print("Fait ", fait)
+            print("A fair ", afair)
+        case '3':
+            print("lequel voulez vous supprimez ?")
+            print(afair)
+            choice = input()
+            print("Êtes vous sûr ?")
+            print("1 - Oui")
+            print("2 - Non")
+            resp = input()
+            match resp:
+                case '1':
+                    afair.remove(choice)
+                case '2':
+                    pass
+            print("A faire ", afaire)
+            print("Fait ", fait)
+            print("A fair ", afair)
+            
 choix = ''
 while choix != 'q':
     print('\n==== Menu principal ====')
