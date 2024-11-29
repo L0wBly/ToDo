@@ -1,6 +1,7 @@
 afaire = []
 afair = []
 fait = []
+
 def lister_todos():
     print("A faire ", afaire)
     print("Fait ", fait)
